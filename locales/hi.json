@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "home": "होम",
+    "docs": "दस्तावेज़",
+    "search": "खोजें...",
+    "language": "भाषा"
+  },
+  "docs": {
+    "onThisPage": "इस पृष्ठ पर",
+    "editPage": "यह पृष्ठ संपादित करें",
+    "lastUpdated": "अंतिम अपडेट",
+    "previous": "पिछला",
+    "next": "अगला"
+  },
+  "search": {
+    "placeholder": "दस्तावेज़ में खोजें...",
+    "noResults": "कोई परिणाम नहीं मिला",
+    "results": "परिणाम"
+  },
+  "footer": {
+    "copyright": "© {year} FluenzR. सर्वाधिकार सुरक्षित।",
+    "privacy": "गोपनीयता",
+    "terms": "शर्तें"
+  },
+  "sidebar": {
+    "gettingStarted": "शुरू करें",
+    "introduction": "परिचय",
+    "quickStart": "त्वरित शुरुआत",
+    "plansAndPricing": "योजनाएं और मूल्य",
+    "emailAccounts": "ईमेल खाते",
+    "connectGmail": "Gmail जोड़ें",
+    "connectOutlook": "Outlook जोड़ें",
+    "smtpConfig": "SMTP कॉन्फ़िगरेशन",
+    "emailWarming": "ईमेल वार्मिंग",
+    "contacts": "संपर्क",
+    "createContacts": "संपर्क बनाएं",
+    "importCsv": "CSV आयात करें",
+    "contactGroups": "संपर्क समूह",
+    "customFields": "कस्टम फ़ील्ड",
+    "salesPipeline": "सेल्स पाइपलाइन",
+    "campaigns": "अभियान",
+    "createCampaign": "अभियान बनाएं",
+    "workflowEditor": "वर्कफ़्लो एडिटर",
+    "variablesPersonalization": "वेरिएबल और पर्सनलाइज़ेशन",
+    "abTesting": "A/B टेस्टिंग",
+    "statistics": "सांख्यिकी",
+    "inbox": "इनबॉक्स",
+    "overview": "अवलोकन",
+    "manageReplies": "जवाब प्रबंधित करें",
+    "api": "API (Pro)",
+    "authentication": "प्रमाणीकरण",
+    "webhooks": "Webhooks",
+    "help": "मदद",
+    "faq": "FAQ",
+    "troubleshooting": "समस्या निवारण",
+    "deliverability": "डिलीवरेबिलिटी"
+  }
+}

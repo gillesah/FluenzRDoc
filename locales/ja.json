@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "docs": "ドキュメント",
+    "search": "検索...",
+    "language": "言語"
+  },
+  "docs": {
+    "onThisPage": "このページの内容",
+    "editPage": "このページを編集",
+    "lastUpdated": "最終更新",
+    "previous": "前へ",
+    "next": "次へ"
+  },
+  "search": {
+    "placeholder": "ドキュメントを検索...",
+    "noResults": "結果が見つかりません",
+    "results": "件"
+  },
+  "footer": {
+    "copyright": "© {year} FluenzR. All rights reserved.",
+    "privacy": "プライバシー",
+    "terms": "利用規約"
+  },
+  "sidebar": {
+    "gettingStarted": "はじめに",
+    "introduction": "はじめに",
+    "quickStart": "クイックスタート",
+    "plansAndPricing": "プランと料金",
+    "emailAccounts": "メールアカウント",
+    "connectGmail": "Gmail接続",
+    "connectOutlook": "Outlook接続",
+    "smtpConfig": "SMTP設定",
+    "emailWarming": "メールウォーミング",
+    "contacts": "連絡先",
+    "createContacts": "連絡先を作成",
+    "importCsv": "CSVインポート",
+    "contactGroups": "連絡先グループ",
+    "customFields": "カスタムフィールド",
+    "salesPipeline": "セールスパイプライン",
+    "campaigns": "キャンペーン",
+    "createCampaign": "キャンペーン作成",
+    "workflowEditor": "ワークフローエディタ",
+    "variablesPersonalization": "変数とパーソナライズ",
+    "abTesting": "A/Bテスト",
+    "statistics": "統計",
+    "inbox": "受信トレイ",
+    "overview": "概要",
+    "manageReplies": "返信管理",
+    "api": "API (Pro)",
+    "authentication": "認証",
+    "webhooks": "Webhooks",
+    "help": "ヘルプ",
+    "faq": "FAQ",
+    "troubleshooting": "トラブルシューティング",
+    "deliverability": "配信到達性"
+  }
+}

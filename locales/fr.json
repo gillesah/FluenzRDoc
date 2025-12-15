@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "docs": "Documentation",
+    "search": "Rechercher...",
+    "language": "Langue"
+  },
+  "docs": {
+    "onThisPage": "Sur cette page",
+    "editPage": "Modifier cette page",
+    "lastUpdated": "Dernière mise à jour",
+    "previous": "Précédent",
+    "next": "Suivant"
+  },
+  "search": {
+    "placeholder": "Rechercher dans la documentation...",
+    "noResults": "Aucun résultat trouvé",
+    "results": "résultats"
+  },
+  "footer": {
+    "copyright": "© {year} FluenzR. Tous droits réservés.",
+    "privacy": "Confidentialité",
+    "terms": "Conditions"
+  },
+  "sidebar": {
+    "gettingStarted": "Démarrage",
+    "introduction": "Introduction",
+    "quickStart": "Démarrage rapide",
+    "plansAndPricing": "Plans et tarifs",
+    "emailAccounts": "Comptes Email",
+    "connectGmail": "Connecter Gmail",
+    "connectOutlook": "Connecter Outlook",
+    "smtpConfig": "Configuration SMTP",
+    "emailWarming": "Email Warming",
+    "contacts": "Contacts",
+    "createContacts": "Créer des contacts",
+    "importCsv": "Importer un CSV",
+    "contactGroups": "Groupes de contacts",
+    "customFields": "Champs personnalisés",
+    "salesPipeline": "Pipeline de vente",
+    "campaigns": "Campagnes",
+    "createCampaign": "Créer une campagne",
+    "workflowEditor": "Éditeur de workflow",
+    "variablesPersonalization": "Variables et personnalisation",
+    "abTesting": "A/B Testing",
+    "statistics": "Statistiques",
+    "inbox": "Boîte de réception",
+    "overview": "Vue d'ensemble",
+    "manageReplies": "Gérer les réponses",
+    "api": "API (Pro)",
+    "authentication": "Authentification",
+    "webhooks": "Webhooks",
+    "help": "Aide",
+    "faq": "FAQ",
+    "troubleshooting": "Dépannage",
+    "deliverability": "Délivrabilité"
+  }
+}

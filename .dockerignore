@@ -1,0 +1,12 @@
+node_modules
+.nuxt
+.output
+dist
+.git
+.gitignore
+README.md
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db
