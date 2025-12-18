@@ -1,0 +1,8 @@
+<svg width="541" height="144" viewBox="0 0 541 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- This is a placeholder - we'll need to trace the actual logo design -->
+  <!-- For now, creating a simple logo with text and a violet dot -->
+  <text x="20" y="100" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white">
+    FluenzR
+  </text>
+  <circle cx="500" cy="72" r="20" fill="#8B5CF6"/>
+</svg>

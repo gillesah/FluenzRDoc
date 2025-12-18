@@ -1,4 +1,41 @@
 {
+  "header": {
+    "openApp": "アプリを開く"
+  },
+  "home": {
+    "title": "FluenzR ドキュメント",
+    "subtitle": "FluenzRを使用してコールドメールキャンペーンを自動化し、見込み客開拓を強化する方法を学びましょう。",
+    "getStarted": "始める",
+    "apiDocs": "API ドキュメント",
+    "exploreTitle": "ドキュメントを探索",
+    "quickStart": {
+      "title": "クイックスタート",
+      "desc": "アカウントを設定し、数分で最初のキャンペーンを送信しましょう。"
+    },
+    "emailAccounts": {
+      "title": "メールアカウント",
+      "desc": "Gmail、Outlook、またはSMTPサーバーを接続してメールを送信します。"
+    },
+    "contacts": {
+      "title": "連絡先管理",
+      "desc": "見込み客を効率的にインポート、整理、セグメント化します。"
+    },
+    "campaigns": {
+      "title": "キャンペーン",
+      "desc": "ビジュアルエディタで自動メールシーケンスを作成します。"
+    },
+    "analytics": {
+      "title": "統計",
+      "desc": "詳細な指標でキャンペーンのパフォーマンスを分析します。"
+    },
+    "api": {
+      "title": "REST API",
+      "desc": "完全なAPIでFluenzRをツールと統合します（Proプラン）。"
+    },
+    "helpTitle": "ヘルプが必要ですか？",
+    "helpSubtitle": "私たちのチームがあなたの成功をサポートします。",
+    "contactSupport": "サポートに連絡"
+  },
   "nav": {
     "home": "ホーム",
     "docs": "ドキュメント",

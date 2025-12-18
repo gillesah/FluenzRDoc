@@ -5,7 +5,7 @@
       <div class="container mx-auto px-4 h-16 flex items-center justify-between">
         <div class="flex items-center gap-8">
           <NuxtLink to="/" class="flex items-center gap-2">
-            <span class="text-2xl font-bold text-primary-600">FluenzR</span>
+            <img src="/logo_black.png" alt="FluenzR" class="h-8 w-auto" />
             <span class="text-sm text-gray-500 dark:text-gray-400">Docs</span>
           </NuxtLink>
           <nav class="hidden md:flex items-center gap-6">

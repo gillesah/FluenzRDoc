@@ -65,7 +65,7 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#6366f1' }
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
       ]
     }
   },

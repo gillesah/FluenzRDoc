@@ -1,4 +1,41 @@
 {
+  "header": {
+    "openApp": "Ouvrir l'app"
+  },
+  "home": {
+    "title": "Documentation FluenzR",
+    "subtitle": "Apprenez à utiliser FluenzR pour automatiser vos campagnes de cold emailing et booster votre prospection.",
+    "getStarted": "Commencer",
+    "apiDocs": "Documentation API",
+    "exploreTitle": "Explorez la documentation",
+    "quickStart": {
+      "title": "Démarrage rapide",
+      "desc": "Configurez votre compte et envoyez votre première campagne en quelques minutes."
+    },
+    "emailAccounts": {
+      "title": "Comptes Email",
+      "desc": "Connectez Gmail, Outlook ou votre serveur SMTP pour envoyer des emails."
+    },
+    "contacts": {
+      "title": "Gestion des contacts",
+      "desc": "Importez, organisez et segmentez vos prospects efficacement."
+    },
+    "campaigns": {
+      "title": "Campagnes",
+      "desc": "Créez des séquences d'emails automatisées avec notre éditeur visuel."
+    },
+    "analytics": {
+      "title": "Statistiques",
+      "desc": "Analysez les performances de vos campagnes avec des métriques détaillées."
+    },
+    "api": {
+      "title": "API REST",
+      "desc": "Intégrez FluenzR à vos outils avec notre API complète (Plan Pro)."
+    },
+    "helpTitle": "Besoin d'aide ?",
+    "helpSubtitle": "Notre équipe est là pour vous accompagner dans votre réussite.",
+    "contactSupport": "Contacter le support"
+  },
   "nav": {
     "home": "Accueil",
     "docs": "Documentation",
