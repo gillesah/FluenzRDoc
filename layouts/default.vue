@@ -30,7 +30,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
             </svg>
           </button>
-          <a href="https://app.fluenzr.co" target="_blank" class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-primary-600 rounded-md hover:bg-primary-700">
+          <a href="https://app.fluenzr.co" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-primary-600 rounded-md hover:bg-primary-700">
             {{ appLinkText }}
           </a>
         </div>
@@ -47,8 +47,8 @@
       <div class="container mx-auto px-4 text-center text-sm text-gray-500 dark:text-gray-400">
         <p>{{ $t('footer.copyright', { year: new Date().getFullYear() }) }}</p>
         <div class="mt-2 flex items-center justify-center gap-4">
-          <a href="https://fluenzr.co" class="hover:text-primary-600">Website</a>
-          <a href="https://app.fluenzr.co" class="hover:text-primary-600">App</a>
+          <a href="https://fluenzr.co" rel="noopener noreferrer" class="hover:text-primary-600">Website</a>
+          <a href="https://app.fluenzr.co" rel="noopener noreferrer" class="hover:text-primary-600">App</a>
           <a href="mailto:contact@fluenzr.co" class="hover:text-primary-600">Contact</a>
         </div>
       </div>

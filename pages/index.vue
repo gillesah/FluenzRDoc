@@ -155,4 +155,19 @@
 
 <script setup lang="ts">
 const localePath = useLocalePath()
+const { t } = useI18n()
+
+useHead({
+  title: 'FluenzR Documentation - Cold Emailing Intelligent',
+  meta: [
+    { name: 'description', content: 'Documentation officielle de FluenzR. Apprenez a configurer vos comptes email, creer des campagnes et automatiser votre cold emailing.' }
+  ]
+})
+
+useSeoMeta({
+  title: 'FluenzR Documentation - Cold Emailing Intelligent',
+  ogTitle: 'FluenzR Documentation - Cold Emailing Intelligent',
+  description: 'Documentation officielle de FluenzR. Apprenez a configurer vos comptes email, creer des campagnes et automatiser votre cold emailing.',
+  ogDescription: 'Documentation officielle de FluenzR. Apprenez a configurer vos comptes email, creer des campagnes et automatiser votre cold emailing.'
+})
 </script>
