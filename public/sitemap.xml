@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://docs.fluenzr.co/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docs.fluenzr.co/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.fluenzr.co/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docs.fluenzr.co/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docs.fluenzr.co/pt"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://docs.fluenzr.co/ja"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docs.fluenzr.co/hi"/>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Getting Started -->
+  <url>
+    <loc>https://docs.fluenzr.co/docs/getting-started</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docs.fluenzr.co/docs/getting-started"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.fluenzr.co/en/docs/getting-started"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docs.fluenzr.co/es/docs/getting-started"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docs.fluenzr.co/pt/docs/getting-started"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://docs.fluenzr.co/ja/docs/getting-started"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docs.fluenzr.co/hi/docs/getting-started"/>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/getting-started/quick-start</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/getting-started/plans</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Email Accounts -->
+  <url>
+    <loc>https://docs.fluenzr.co/docs/email-accounts</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docs.fluenzr.co/docs/email-accounts"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.fluenzr.co/en/docs/email-accounts"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docs.fluenzr.co/es/docs/email-accounts"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docs.fluenzr.co/pt/docs/email-accounts"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://docs.fluenzr.co/ja/docs/email-accounts"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docs.fluenzr.co/hi/docs/email-accounts"/>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/email-accounts/connect-gmail</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/email-accounts/connect-outlook</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/email-accounts/smtp</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/email-accounts/warming</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Contacts -->
+  <url>
+    <loc>https://docs.fluenzr.co/docs/contacts</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docs.fluenzr.co/docs/contacts"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.fluenzr.co/en/docs/contacts"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docs.fluenzr.co/es/docs/contacts"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docs.fluenzr.co/pt/docs/contacts"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://docs.fluenzr.co/ja/docs/contacts"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docs.fluenzr.co/hi/docs/contacts"/>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/contacts/create</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/contacts/import</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/contacts/groups</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/contacts/custom-fields</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/contacts/pipeline</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/contacts/apollo-sync</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/contacts/calendly</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Campaigns -->
+  <url>
+    <loc>https://docs.fluenzr.co/docs/campaigns</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docs.fluenzr.co/docs/campaigns"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.fluenzr.co/en/docs/campaigns"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docs.fluenzr.co/es/docs/campaigns"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docs.fluenzr.co/pt/docs/campaigns"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://docs.fluenzr.co/ja/docs/campaigns"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docs.fluenzr.co/hi/docs/campaigns"/>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/campaigns/create</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/campaigns/workflow</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/campaigns/variables</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/campaigns/ab-testing</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/campaigns/analytics</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Inbox -->
+  <url>
+    <loc>https://docs.fluenzr.co/docs/inbox</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docs.fluenzr.co/docs/inbox"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.fluenzr.co/en/docs/inbox"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docs.fluenzr.co/es/docs/inbox"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docs.fluenzr.co/pt/docs/inbox"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://docs.fluenzr.co/ja/docs/inbox"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docs.fluenzr.co/hi/docs/inbox"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- API -->
+  <url>
+    <loc>https://docs.fluenzr.co/docs/api</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docs.fluenzr.co/docs/api"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.fluenzr.co/en/docs/api"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docs.fluenzr.co/es/docs/api"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docs.fluenzr.co/pt/docs/api"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://docs.fluenzr.co/ja/docs/api"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docs.fluenzr.co/hi/docs/api"/>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/api/authentication</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/api/contacts</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/api/campaigns</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/api/webhooks</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Help -->
+  <url>
+    <loc>https://docs.fluenzr.co/docs/help/faq</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docs.fluenzr.co/docs/help/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.fluenzr.co/en/docs/help/faq"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://docs.fluenzr.co/es/docs/help/faq"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://docs.fluenzr.co/pt/docs/help/faq"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://docs.fluenzr.co/ja/docs/help/faq"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://docs.fluenzr.co/hi/docs/help/faq"/>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/help/troubleshooting</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/help/deliverability</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+</urlset>
