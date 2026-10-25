@@ -27,5 +27,17 @@
 </template>
 
 <script setup lang="ts">
-const { toc } = useContent()
+const route = useRoute()
+const { locale } = useI18n()
+const contentPath = computed(() => {
+  const slug = route.params.slug
+  const slugPath = Array.isArray(slug) ? slug.join('/') : slug
+  return `/${locale.value}/${slugPath}`
+})
+const { data: doc } = await useAsyncData(
+  `toc-${contentPath.value}`,
+  () => queryContent(contentPath.value).only(['body']).findOne().catch(() => null),
+  { watch: [contentPath] }
+)
+const toc = computed(() => doc.value?.body?.toc)
 </script>

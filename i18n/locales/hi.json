@@ -84,12 +84,18 @@
     "inbox": "इनबॉक्स",
     "overview": "अवलोकन",
     "manageReplies": "जवाब प्रबंधित करें",
-    "api": "API (Pro)",
+    "api": "API",
     "authentication": "प्रमाणीकरण",
     "webhooks": "Webhooks",
     "help": "मदद",
     "faq": "FAQ",
     "troubleshooting": "समस्या निवारण",
-    "deliverability": "डिलीवरेबिलिटी"
+    "deliverability": "डिलीवरेबिलिटी",
+    "linkedin": "LinkedIn",
+    "linkedinConnect": "Connect an account",
+    "linkedinSequences": "LinkedIn steps",
+    "linkedinSearch": "Search",
+    "linkedinInvitations": "Received invitations",
+    "mcp": "Connect an AI (MCP)"
   }
 }

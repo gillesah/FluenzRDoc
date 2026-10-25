@@ -128,15 +128,23 @@
       </h3>
       <ul class="space-y-1">
         <li>
-          <NuxtLink :to="localePath('/docs/inbox/overview')" :class="linkClass('/docs/inbox/overview')">
+          <NuxtLink :to="localePath('/docs/inbox')" :class="linkClass('/docs/inbox')">
             {{ $t('sidebar.overview') }}
           </NuxtLink>
         </li>
-        <li>
-          <NuxtLink :to="localePath('/docs/inbox/replies')" :class="linkClass('/docs/inbox/replies')">
-            {{ $t('sidebar.manageReplies') }}
-          </NuxtLink>
-        </li>
+      </ul>
+    </div>
+
+    <!-- LinkedIn -->
+    <div>
+      <h3 class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">
+        {{ $t('sidebar.linkedin') }}
+      </h3>
+      <ul class="space-y-1">
+        <li><NuxtLink :to="localePath('/docs/linkedin')" :class="linkClass('/docs/linkedin')">{{ $t('sidebar.linkedinConnect') }}</NuxtLink></li>
+        <li><NuxtLink :to="localePath('/docs/linkedin/sequences')" :class="linkClass('/docs/linkedin/sequences')">{{ $t('sidebar.linkedinSequences') }}</NuxtLink></li>
+        <li><NuxtLink :to="localePath('/docs/linkedin/search')" :class="linkClass('/docs/linkedin/search')">{{ $t('sidebar.linkedinSearch') }}</NuxtLink></li>
+        <li><NuxtLink :to="localePath('/docs/linkedin/invitations')" :class="linkClass('/docs/linkedin/invitations')">{{ $t('sidebar.linkedinInvitations') }}</NuxtLink></li>
       </ul>
     </div>
 
@@ -171,6 +179,11 @@
             {{ $t('sidebar.webhooks') }}
           </NuxtLink>
         </li>
+        <li>
+          <NuxtLink :to="localePath('/docs/api/mcp')" :class="linkClass('/docs/api/mcp')">
+            {{ $t('sidebar.mcp') }}
+          </NuxtLink>
+        </li>
       </ul>
     </div>
 
@@ -181,17 +194,17 @@
       </h3>
       <ul class="space-y-1">
         <li>
-          <NuxtLink :to="localePath('/docs/faq')" :class="linkClass('/docs/faq')">
+          <NuxtLink :to="localePath('/docs/help/faq')" :class="linkClass('/docs/help/faq')">
             {{ $t('sidebar.faq') }}
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink :to="localePath('/docs/troubleshooting')" :class="linkClass('/docs/troubleshooting')">
+          <NuxtLink :to="localePath('/docs/help/troubleshooting')" :class="linkClass('/docs/help/troubleshooting')">
             {{ $t('sidebar.troubleshooting') }}
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink :to="localePath('/docs/deliverability')" :class="linkClass('/docs/deliverability')">
+          <NuxtLink :to="localePath('/docs/help/deliverability')" :class="linkClass('/docs/help/deliverability')">
             {{ $t('sidebar.deliverability') }}
           </NuxtLink>
         </li>

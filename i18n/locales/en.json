@@ -84,12 +84,18 @@
     "inbox": "Inbox",
     "overview": "Overview",
     "manageReplies": "Manage Replies",
-    "api": "API (Pro)",
+    "api": "API",
     "authentication": "Authentication",
     "webhooks": "Webhooks",
     "help": "Help",
     "faq": "FAQ",
     "troubleshooting": "Troubleshooting",
-    "deliverability": "Deliverability"
+    "deliverability": "Deliverability",
+    "linkedin": "LinkedIn",
+    "linkedinConnect": "Connect an account",
+    "linkedinSequences": "LinkedIn steps",
+    "linkedinSearch": "Search",
+    "linkedinInvitations": "Received invitations",
+    "mcp": "Connect an AI (MCP)"
   }
 }

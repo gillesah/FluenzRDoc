@@ -84,12 +84,18 @@
     "inbox": "受信トレイ",
     "overview": "概要",
     "manageReplies": "返信管理",
-    "api": "API (Pro)",
+    "api": "API",
     "authentication": "認証",
     "webhooks": "Webhooks",
     "help": "ヘルプ",
     "faq": "FAQ",
     "troubleshooting": "トラブルシューティング",
-    "deliverability": "配信到達性"
+    "deliverability": "配信到達性",
+    "linkedin": "LinkedIn",
+    "linkedinConnect": "Connect an account",
+    "linkedinSequences": "LinkedIn steps",
+    "linkedinSearch": "Search",
+    "linkedinInvitations": "Received invitations",
+    "mcp": "Connect an AI (MCP)"
   }
 }

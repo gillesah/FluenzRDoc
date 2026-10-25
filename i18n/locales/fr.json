@@ -84,12 +84,18 @@
     "inbox": "Boîte de réception",
     "overview": "Vue d'ensemble",
     "manageReplies": "Gérer les réponses",
-    "api": "API (Pro)",
+    "api": "API",
     "authentication": "Authentification",
     "webhooks": "Webhooks",
     "help": "Aide",
     "faq": "FAQ",
     "troubleshooting": "Dépannage",
-    "deliverability": "Délivrabilité"
+    "deliverability": "Délivrabilité",
+    "linkedin": "LinkedIn",
+    "linkedinConnect": "Connecter un compte",
+    "linkedinSequences": "Étapes LinkedIn",
+    "linkedinSearch": "Recherche",
+    "linkedinInvitations": "Invitations reçues",
+    "mcp": "Brancher une IA (MCP)"
   }
 }
