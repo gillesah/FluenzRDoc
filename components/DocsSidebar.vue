@@ -21,6 +21,11 @@
             {{ $t('sidebar.plansAndPricing') }}
           </NuxtLink>
         </li>
+        <li v-if="hasNewDocs">
+          <NuxtLink :to="localePath('/docs/getting-started/organization')" :class="linkClass('/docs/getting-started/organization')">
+            {{ $t('sidebar.organization') }}
+          </NuxtLink>
+        </li>
       </ul>
     </div>
 
@@ -84,6 +89,16 @@
             {{ $t('sidebar.salesPipeline') }}
           </NuxtLink>
         </li>
+        <li v-if="hasNewDocs">
+          <NuxtLink :to="localePath('/docs/contacts/find-emails')" :class="linkClass('/docs/contacts/find-emails')">
+            {{ $t('sidebar.findEmails') }}
+          </NuxtLink>
+        </li>
+        <li v-if="hasNewDocs">
+          <NuxtLink :to="localePath('/docs/contacts/signals')" :class="linkClass('/docs/contacts/signals')">
+            {{ $t('sidebar.signals') }}
+          </NuxtLink>
+        </li>
       </ul>
     </div>
 
@@ -101,6 +116,16 @@
         <li>
           <NuxtLink :to="localePath('/docs/campaigns/workflow')" :class="linkClass('/docs/campaigns/workflow')">
             {{ $t('sidebar.workflowEditor') }}
+          </NuxtLink>
+        </li>
+        <li v-if="hasNewDocs">
+          <NuxtLink :to="localePath('/docs/campaigns/calls-tasks')" :class="linkClass('/docs/campaigns/calls-tasks')">
+            {{ $t('sidebar.callsTasks') }}
+          </NuxtLink>
+        </li>
+        <li v-if="hasNewDocs">
+          <NuxtLink :to="localePath('/docs/campaigns/edit-running')" :class="linkClass('/docs/campaigns/edit-running')">
+            {{ $t('sidebar.editRunning') }}
           </NuxtLink>
         </li>
         <li>
@@ -132,6 +157,17 @@
             {{ $t('sidebar.overview') }}
           </NuxtLink>
         </li>
+      </ul>
+    </div>
+
+    <!-- Calendar -->
+    <div v-if="hasNewDocs">
+      <h3 class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">
+        {{ $t('sidebar.calendar') }}
+      </h3>
+      <ul class="space-y-1">
+        <li><NuxtLink :to="localePath('/docs/calendar')" :class="linkClass('/docs/calendar')">{{ $t('sidebar.calendarBooking') }}</NuxtLink></li>
+        <li><NuxtLink :to="localePath('/docs/calendar/agendas')" :class="linkClass('/docs/calendar/agendas')">{{ $t('sidebar.calendarAgendas') }}</NuxtLink></li>
       </ul>
     </div>
 
@@ -208,6 +244,11 @@
             {{ $t('sidebar.deliverability') }}
           </NuxtLink>
         </li>
+        <li v-if="hasNewDocs">
+          <NuxtLink :to="localePath('/docs/help/lena')" :class="linkClass('/docs/help/lena')">
+            {{ $t('sidebar.lena') }}
+          </NuxtLink>
+        </li>
       </ul>
     </div>
   </div>
@@ -216,6 +257,10 @@
 <script setup lang="ts">
 const route = useRoute()
 const localePath = useLocalePath()
+const { locale } = useI18n()
+
+// Pages ajoutées le 26/10/2026 : disponibles en français et en anglais seulement.
+const hasNewDocs = computed(() => ['fr', 'en'].includes(locale.value))
 
 function linkClass(path: string) {
   const localizedPath = localePath(path)

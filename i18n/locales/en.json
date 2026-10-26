@@ -96,6 +96,15 @@
     "linkedinSequences": "LinkedIn steps",
     "linkedinSearch": "Search",
     "linkedinInvitations": "Received invitations",
-    "mcp": "Connect an AI (MCP)"
+    "mcp": "Connect an AI (MCP)",
+    "organization": "Organization and team",
+    "findEmails": "Email finder",
+    "signals": "Intent signals",
+    "callsTasks": "Calls and tasks",
+    "editRunning": "Edit a running campaign",
+    "lena": "Lena, the assistant",
+    "calendar": "Calendar",
+    "calendarBooking": "Booking meetings",
+    "calendarAgendas": "Connect a calendar"
   }
 }

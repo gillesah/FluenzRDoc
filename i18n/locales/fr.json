@@ -96,6 +96,15 @@
     "linkedinSequences": "Étapes LinkedIn",
     "linkedinSearch": "Recherche",
     "linkedinInvitations": "Invitations reçues",
-    "mcp": "Brancher une IA (MCP)"
+    "mcp": "Brancher une IA (MCP)",
+    "organization": "Organisation et équipe",
+    "findEmails": "Recherche d'emails",
+    "signals": "Signaux d'intention",
+    "callsTasks": "Appels et tâches",
+    "editRunning": "Modifier une campagne en cours",
+    "lena": "Léna, l'assistante",
+    "calendar": "Calendrier",
+    "calendarBooking": "Prise de rendez-vous",
+    "calendarAgendas": "Connecter un agenda"
   }
 }
