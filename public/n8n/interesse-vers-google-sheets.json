@@ -1,0 +1,94 @@
+{
+  "name": "FluenzR - prospect interesse vers Google Sheets",
+  "nodes": [
+    {
+      "parameters": {
+        "event": "CONTACT_INTERESTED"
+      },
+      "id": "a2000001-0000-4000-8000-000000000001",
+      "name": "FluenzR Trigger",
+      "type": "n8n-nodes-fluenzr.fluenzrTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "credentials": {
+        "fluenzrApi": {
+          "id": "",
+          "name": "FluenzR API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "",
+          "mode": "list"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "",
+          "mode": "list"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Date": "={{ $json.timestamp }}",
+            "Email": "={{ $json.email }}",
+            "Prenom": "={{ $json.firstName }}",
+            "Nom": "={{ $json.lastName }}",
+            "Entreprise": "={{ $json.company }}",
+            "Source": "={{ $json.source }}"
+          },
+          "matchingColumns": [],
+          "schema": []
+        },
+        "options": {}
+      },
+      "id": "a2000001-0000-4000-8000-000000000002",
+      "name": "Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        260,
+        0
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "",
+          "name": "Google Sheets"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "FluenzR Trigger": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false,
+    "instanceId": ""
+  },
+  "pinData": {},
+  "tags": [
+    {
+      "name": "FluenzR"
+    }
+  ]
+}

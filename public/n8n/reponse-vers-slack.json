@@ -1,0 +1,77 @@
+{
+  "name": "FluenzR - reponse recue vers Slack",
+  "nodes": [
+    {
+      "parameters": {
+        "event": "EMAIL_REPLIED"
+      },
+      "id": "a1000001-0000-4000-8000-000000000001",
+      "name": "FluenzR Trigger",
+      "type": "n8n-nodes-fluenzr.fluenzrTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "credentials": {
+        "fluenzrApi": {
+          "id": "",
+          "name": "FluenzR API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "value": "",
+          "mode": "name"
+        },
+        "text": "=Reponse de {{ $json.fromEmail }}\nObjet : {{ $json.subject }}\nOuvrez l'Inbox FluenzR pour repondre : https://app.fluenzr.co/inbox",
+        "otherOptions": {}
+      },
+      "id": "a1000001-0000-4000-8000-000000000002",
+      "name": "Slack",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [
+        260,
+        0
+      ],
+      "credentials": {
+        "slackApi": {
+          "id": "",
+          "name": "Slack"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "FluenzR Trigger": {
+      "main": [
+        [
+          {
+            "node": "Slack",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false,
+    "instanceId": ""
+  },
+  "pinData": {},
+  "tags": [
+    {
+      "name": "FluenzR"
+    }
+  ]
+}

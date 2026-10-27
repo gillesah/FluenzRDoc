@@ -1,0 +1,106 @@
+{
+  "name": "FluenzR - nouveau lead vers une campagne",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "fluenzr-nouveau-lead",
+        "options": {}
+      },
+      "id": "a3000001-0000-4000-8000-000000000001",
+      "name": "Nouveau lead",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "contact",
+        "operation": "upsert",
+        "email": "={{ $json.body.email }}",
+        "additionalFields": {
+          "firstName": "={{ $json.body.firstName }}",
+          "company": "={{ $json.body.company }}",
+          "tags": "lead-entrant"
+        }
+      },
+      "id": "a3000001-0000-4000-8000-000000000002",
+      "name": "FluenzR - creer ou mettre a jour",
+      "type": "n8n-nodes-fluenzr.fluenzr",
+      "typeVersion": 1,
+      "position": [
+        260,
+        0
+      ],
+      "credentials": {
+        "fluenzrApi": {
+          "id": "",
+          "name": "FluenzR API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "campaign",
+        "operation": "addContact",
+        "email": "={{ $('Nouveau lead').item.json.body.email }}",
+        "campaignId": ""
+      },
+      "id": "a3000001-0000-4000-8000-000000000003",
+      "name": "FluenzR - ajouter a la campagne",
+      "type": "n8n-nodes-fluenzr.fluenzr",
+      "typeVersion": 1,
+      "position": [
+        520,
+        0
+      ],
+      "credentials": {
+        "fluenzrApi": {
+          "id": "",
+          "name": "FluenzR API"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Nouveau lead": {
+      "main": [
+        [
+          {
+            "node": "FluenzR - creer ou mettre a jour",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "FluenzR - creer ou mettre a jour": {
+      "main": [
+        [
+          {
+            "node": "FluenzR - ajouter a la campagne",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false,
+    "instanceId": ""
+  },
+  "pinData": {},
+  "tags": [
+    {
+      "name": "FluenzR"
+    }
+  ]
+}
