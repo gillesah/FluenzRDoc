@@ -32,6 +32,10 @@
       "title": "REST API",
       "desc": "完全なAPIでFluenzRをツールと統合します（Proプラン）。"
     },
+    "mcp": {
+      "title": "AIコネクタ（MCP）",
+      "desc": "Claude、ChatGPT、その他のMCPクライアントを接続してアカウントを操作できます。AIの操作は承認制にできます。"
+    },
     "helpTitle": "ヘルプが必要ですか？",
     "helpSubtitle": "私たちのチームがあなたの成功をサポートします。",
     "contactSupport": "サポートに連絡"

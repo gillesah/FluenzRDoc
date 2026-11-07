@@ -32,6 +32,10 @@
       "title": "API REST",
       "desc": "Integra FluenzR con tus herramientas usando nuestra API completa (Plan Pro)."
     },
+    "mcp": {
+      "title": "Conector de IA (MCP)",
+      "desc": "Conecte Claude, ChatGPT u otro cliente MCP para gestionar su cuenta, con validación de las acciones de su IA."
+    },
     "helpTitle": "¿Necesitas ayuda?",
     "helpSubtitle": "Nuestro equipo está aquí para ayudarte a tener éxito.",
     "contactSupport": "Contactar Soporte"
