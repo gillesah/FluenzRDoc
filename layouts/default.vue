@@ -4,7 +4,7 @@
     <header class="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-800 bg-white/95 dark:bg-gray-950/95 backdrop-blur">
       <div class="container mx-auto px-4 h-16 flex items-center justify-between">
         <div class="flex items-center gap-8">
-          <NuxtLink to="/" class="flex items-center gap-2">
+          <NuxtLink :to="localePath('/')" class="flex items-center gap-2">
             <img src="/logo_black.png" alt="FluenzR" class="h-8 w-auto" />
             <span class="text-sm text-gray-500 dark:text-gray-400">Docs</span>
           </NuxtLink>
