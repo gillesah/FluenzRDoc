@@ -23,6 +23,10 @@ WORKDIR /app
 # Copy the entire .output directory from builder
 COPY --from=builder /app/.output /app/.output
 
+# nitropack 2.12 cherche les fichiers publics (robots.txt, sitemap.xml, favicon, _nuxt/*) dans
+# .output/server/chunks/public au lieu de .output/public : sans ce lien tout fichier statique repond 500.
+RUN ln -s ../../public /app/.output/server/chunks/public
+
 # Set environment variables
 ENV HOST=0.0.0.0
 ENV PORT=3007

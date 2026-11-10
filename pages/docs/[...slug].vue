@@ -45,13 +45,29 @@ definePageMeta({
 })
 
 const route = useRoute()
-const { locale } = useI18n()
+const { locale, locales } = useI18n()
 const localePath = useLocalePath()
 
-// Build content path: /{locale}/{slug}
-const contentPath = computed(() => {
-  const slug = route.params.slug
-  const slugPath = Array.isArray(slug) ? slug.join('/') : slug
-  return `/${locale.value}/${slugPath}`
+const slug = computed(() => {
+  const s = route.params.slug
+  return Array.isArray(s) ? s.join('/') : (s as string)
 })
+
+// Build content path: /{locale}/{slug}
+const contentPath = computed(() => `/${locale.value}/${slug.value}`)
+
+// Langues dans lesquelles cette page existe (pour hreflang), et 404 réel si elle n'existe pas dans la langue courante
+const codes = (locales.value as Array<{ code: string }>).map(l => l.code)
+const { data: available } = await useAsyncData(`avail-${locale.value}-${slug.value}`, async () => {
+  const found: string[] = []
+  for (const code of codes) {
+    const n = await queryContent(`/${code}/${slug.value}`).only(['_path']).find()
+    if (n.some(d => d._path === `/${code}/${slug.value}`)) found.push(code)
+  }
+  return found
+})
+if (!available.value?.includes(locale.value)) {
+  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+}
+useDocSeo(locale.value, `/docs/${slug.value}`, available.value || [locale.value])
 </script>

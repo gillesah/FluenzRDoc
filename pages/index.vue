@@ -170,7 +170,8 @@
 
 <script setup lang="ts">
 const localePath = useLocalePath()
-const { t } = useI18n()
+const { t, locale } = useI18n()
+useDocSeo(locale.value, '', ['fr', 'en', 'es', 'pt', 'ja', 'hi'])
 
 useHead({
   title: 'FluenzR Documentation - Cold Emailing Intelligent',

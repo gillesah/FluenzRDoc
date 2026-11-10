@@ -71,7 +71,6 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'FluenzR Documentation' },
         { property: 'og:description', content: 'Documentation officielle de FluenzR - Plateforme de cold emailing intelligente' },
         { property: 'og:image', content: 'https://docs.fluenzr.co/og-image.png' },
-        { property: 'og:url', content: 'https://docs.fluenzr.co' },
         { property: 'og:locale', content: 'fr_FR' },
         { property: 'og:locale:alternate', content: 'en_US' },
         { property: 'og:locale:alternate', content: 'es_ES' },
@@ -84,8 +83,7 @@ export default defineNuxtConfig({
         { name: 'twitter:image', content: 'https://docs.fluenzr.co/og-image.png' }
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
-        { rel: 'canonical', href: 'https://docs.fluenzr.co' }
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
       ]
     }
   },
