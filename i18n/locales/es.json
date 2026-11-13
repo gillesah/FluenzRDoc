@@ -30,7 +30,7 @@
     },
     "api": {
       "title": "API REST",
-      "desc": "Integra FluenzR con tus herramientas usando nuestra API completa (Plan Pro)."
+      "desc": "Integra FluenzR con tus herramientas usando nuestra API completa."
     },
     "mcp": {
       "title": "Conector de IA (MCP)",

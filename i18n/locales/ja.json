@@ -30,7 +30,7 @@
     },
     "api": {
       "title": "REST API",
-      "desc": "完全なAPIでFluenzRをツールと統合します（Proプラン）。"
+      "desc": "完全なAPIでFluenzRをツールと統合します。"
     },
     "mcp": {
       "title": "AIコネクタ（MCP）",
