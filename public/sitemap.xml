@@ -2295,6 +2295,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://docs.fluenzr.co/en/docs/help/email-footers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.fluenzr.co/en/docs/help/email-footers"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://docs.fluenzr.co/docs/help/faq</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://docs.fluenzr.co/docs/help/faq"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.fluenzr.co/en/docs/help/faq"/>
@@ -2395,6 +2401,13 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://docs.fluenzr.co/docs/help/open-tracking-consent"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.fluenzr.co/en/docs/help/open-tracking-consent"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.fluenzr.co/docs/help/open-tracking-consent"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/help/pieds-email</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docs.fluenzr.co/docs/help/pieds-email"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.fluenzr.co/docs/help/pieds-email"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
