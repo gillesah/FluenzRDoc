@@ -39,6 +39,11 @@
   </div>
 </template>
 
+<script lang="ts">
+// Partagé par toutes les requêtes du processus : chemin -> promesse des langues où la page existe
+const availableCache = new Map<string, Promise<string[]>>()
+</script>
+
 <script setup lang="ts">
 definePageMeta({
   layout: 'docs'
@@ -56,9 +61,14 @@ const slug = computed(() => {
 // Build content path: /{locale}/{slug}
 const contentPath = computed(() => `/${locale.value}/${slug.value}`)
 
-// Langues dans lesquelles cette page existe (pour hreflang), et 404 réel si elle n'existe pas dans la langue courante
+// Langues dans lesquelles cette page existe (pour hreflang), et 404 réel si elle n'existe pas dans la langue courante.
+// Le contenu est immuable entre deux publications : le résultat est calculé une fois par chemin (promesse partagée
+// entre requêtes concurrentes) puis réutilisé. Une erreur de lecture n'est jamais prise pour une page absente :
+// on réessaie une fois, puis 503 + Retry-After (jamais 404).
 const codes = (locales.value as Array<{ code: string }>).map(l => l.code)
-const { data: available } = await useAsyncData(`avail-${locale.value}-${slug.value}`, async () => {
+const nuxtApp = useNuxtApp()
+const event = useRequestEvent()
+const queryAvailable = (): Promise<string[]> => nuxtApp.runWithContext(async () => {
   const found: string[] = []
   for (const code of codes) {
     const n = await queryContent(`/${code}/${slug.value}`).only(['_path']).find()
@@ -66,8 +76,42 @@ const { data: available } = await useAsyncData(`avail-${locale.value}-${slug.val
   }
   return found
 })
-if (!available.value?.includes(locale.value)) {
+const loadAvailable = async (fresh: boolean): Promise<string[]> => {
+  const key = slug.value
+  if (!fresh && !import.meta.dev) {
+    const hit = availableCache.get(key)
+    if (hit) return hit
+  }
+  const p = queryAvailable()
+  if (!import.meta.dev) {
+    availableCache.set(key, p)
+    p.then(r => { if (!r.includes(locale.value)) availableCache.delete(key) }, () => availableCache.delete(key))
+  }
+  return p
+}
+const readAvailable = async (): Promise<string[]> => {
+  let lastError: unknown
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const found = await loadAvailable(attempt > 0)
+      // Absente dans la langue courante : on revérifie une fois sans cache avant de répondre 404
+      if (found.includes(locale.value) || attempt > 0) return found
+    } catch (e) {
+      lastError = e
+    }
+  }
+  if (lastError) throw lastError
+  return []
+}
+let available: string[]
+try {
+  available = await readAvailable()
+} catch (e) {
+  if (event) setResponseHeader(event, 'Retry-After', '2')
+  throw createError({ statusCode: 503, statusMessage: 'Service temporarily unavailable', fatal: true })
+}
+if (!available.includes(locale.value)) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
-useDocSeo(locale.value, `/docs/${slug.value}`, available.value || [locale.value])
+useDocSeo(locale.value, `/docs/${slug.value}`, available)
 </script>

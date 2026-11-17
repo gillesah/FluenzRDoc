@@ -2,6 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  // Garde le contexte Nuxt (useRuntimeConfig, etc.) après un await côté serveur, via AsyncLocalStorage.
+  // Sans lui, sous requêtes concurrentes, queryContent() échoue avec « [nuxt] instance unavailable ».
+  experimental: {
+    asyncContext: true
+  },
+
   devServer: {
     port: 3007
   },
