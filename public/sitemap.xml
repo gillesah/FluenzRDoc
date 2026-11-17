@@ -2210,6 +2210,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://docs.fluenzr.co/en/docs/help/account-delegation</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://docs.fluenzr.co/en/docs/help/account-delegation"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://docs.fluenzr.co/docs/help/alertes</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://docs.fluenzr.co/docs/help/alertes"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.fluenzr.co/docs/help/alertes"/>
@@ -2219,6 +2225,13 @@
   <url>
     <loc>https://docs.fluenzr.co/en/docs/help/alerts</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://docs.fluenzr.co/en/docs/help/alerts"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docs.fluenzr.co/docs/help/delegation-compte</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://docs.fluenzr.co/docs/help/delegation-compte"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://docs.fluenzr.co/docs/help/delegation-compte"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
